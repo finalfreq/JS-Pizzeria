@@ -51,21 +51,28 @@ $(function() {
   });
 
   $("form#create-pizza").submit(function(event) {
-    var size = $("#pizza-size").val();
-    var pizza = new Pizza(size)
+    if ($("#toppings :checked").length <= 0) {
+      alert("You did not select any toppings!")
+      event.preventDefault();
 
-    $("#toppings :checked").each(function() {
-      pizza.toppings.push($(this).val());
-      $("ul#receipt").append("<li>" + $(this).val() + "</li>")
-    });
-    pizza.calculateCost();
-    $("#order-form").hide();
-    $("#order-finished").fadeIn("slow", function(){
+    } else {
 
-    });
-    $(".size").append(size);
-    $(".cost").append(parseFloat(pizza.cost).toFixed(2));
-    event.preventDefault();
+      var size = $("#pizza-size").val();
+      var pizza = new Pizza(size)
+
+      $("#toppings :checked").each(function() {
+        pizza.toppings.push($(this).val());
+        $("ul#receipt").append("<li>" + $(this).val() + "</li>")
+      });
+      pizza.calculateCost();
+      $("#order-form").hide();
+      $("#order-finished").fadeIn("slow", function(){
+
+      });
+      $(".size").append(size);
+      $(".cost").append(parseFloat(pizza.cost).toFixed(2));
+      event.preventDefault();
+    }
   });
 
   $("span#reset").click(function() {
