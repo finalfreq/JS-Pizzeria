@@ -19,7 +19,7 @@
   font-size: 2em;
 }
 .result, p.lead {
-  font-size: 1.3em;
+  font-size: 1.1em;
 
 }
 
@@ -40,12 +40,12 @@ body {
   margin-right: 20px;
 }
 
-.about, .order {
+.about, .order, .contact {
   border: solid 3px;
   text-align: center;
 }
 
-.about h1, .order h1, #order-form, #order-finished h1, #pricing-chart h1, #pricing{
+.about h1, .order h1, #order-form, #order-finished h1, #pricing-chart h1, #pricing, .contact h1, .contact ul{
   color: #590202;
   text-decoration: underline;
 }
@@ -74,4 +74,14 @@ body {
 
 img {
   margin-top: 2em;
+}
+
+.contact {
+/*   position:relative;
+top: -100px;
+ */
+}
+
+.contact ul li {
+  padding: 10px;
 }
