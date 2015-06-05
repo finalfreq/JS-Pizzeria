@@ -9,7 +9,7 @@ To use the app navigate to
 Luigis-pizzeria.html
 ```
 
-Once the page has loaded feel free to read the home page, once you are ready to create a pizza click the CYO button. On the next page you can add the size of the pizza you'd like and the toppings.
+Once the page has loaded feel free to read the home page, once you are ready to create a pizza click the "CYO" button. On the next page you can add the size of the pizza you'd like and the toppings of your choice. From there click the "Bake" button to take you to the order completion page.
 
 ### Bug reports
 
