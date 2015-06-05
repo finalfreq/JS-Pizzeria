@@ -5,6 +5,9 @@
 
 #order-form {
   display: none;
+  border: solid 3px;
+
+
 }
 #home-page {
   display: all;
@@ -42,7 +45,7 @@ body {
   text-align: center;
 }
 
-.about h1, .order h1 {
+.about h1, .order h1, #order-form {
   color: #590202;
   text-decoration: underline;
 }

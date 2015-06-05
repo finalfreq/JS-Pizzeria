@@ -28,6 +28,10 @@ Pizza.prototype.calculateCost = function() {
 
 
 $(function() {
+  allToppings.forEach(function(topping) {
+    $("#toppings").append("<label><input type='checkbox' value='" + topping + "'>" + topping +" </label><br>")
+  });
+
   $("button#cyo").click(function() {
     $("#order-form").show();
     $("#home-page").hide();
