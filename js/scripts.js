@@ -45,8 +45,11 @@ $(function() {
 
   $("button#cyo").click(function() {
     $("#order-form").fadeIn("slow", function(){
-
     });
+
+    $("#pricing-chart").fadeIn("slow", function(){
+    });
+
     $("#home-page").hide();
   });
 

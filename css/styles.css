@@ -3,7 +3,7 @@
   text-align: inherit;
 }
 
-#order-form, #order-finished {
+#order-form, #order-finished, #pricing-chart {
   display: none;
   border: solid 3px;
 
@@ -19,7 +19,7 @@
   font-size: 2em;
 }
 .result, p.lead {
-  font-size: 1em;
+  font-size: 1.3em;
 
 }
 
@@ -45,12 +45,12 @@ body {
   text-align: center;
 }
 
-.about h1, .order h1, #order-form, #order-finished h1 {
+.about h1, .order h1, #order-form, #order-finished h1, #pricing-chart h1, #pricing{
   color: #590202;
   text-decoration: underline;
 }
 
-#cyo, #home {
+#cyo, #reset {
   color: #590202;
 }
 .checkbox {
