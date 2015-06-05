@@ -24,6 +24,7 @@
 }
 
 body {
+  display:none;
   background-image: url("../media/pizza.jpg");
   align-items: center;
   font-size: 23px;

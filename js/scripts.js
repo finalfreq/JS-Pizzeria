@@ -36,12 +36,17 @@ Pizza.prototype.calculateCost = function() {
 
 
 $(function() {
+  $("body").fadeIn("slow", function(){
+
+  });
   allToppings.forEach(function(topping) {
     $("#toppings").append("<label><input type='checkbox' value='" + topping + "'>" + topping +" </label><br>")
   });
 
   $("button#cyo").click(function() {
-    $("#order-form").show();
+    $("#order-form").fadeIn("slow", function(){
+
+    });
     $("#home-page").hide();
   });
 
@@ -55,7 +60,9 @@ $(function() {
     });
     pizza.calculateCost();
     $("#order-form").hide();
-    $("#order-finished").show();
+    $("#order-finished").fadeIn("slow", function(){
+
+    });
     $(".size").append(size);
     $(".cost").append(parseFloat(pizza.cost).toFixed(2));
     event.preventDefault();
