@@ -69,6 +69,7 @@ $(function() {
       });
       pizza.calculateCost();
       $("#order-form").hide();
+      $("#pricing-chart").hide();
       $("#order-finished").fadeIn("slow", function(){
 
       });
