@@ -12,10 +12,10 @@ allToppings = [
   "beef",
   "salami" ]
 
-function Pizza(size, cost, toppings) {
+function Pizza(size, toppings) {
   this.toppings = []
   this.size = size
-  this.cost = cost
+  this.cost = 0
 }
 
 Pizza.prototype.addTopping = function(topping) {
@@ -24,6 +24,14 @@ Pizza.prototype.addTopping = function(topping) {
 
 Pizza.prototype.calculateCost = function() {
   this.cost += this.toppings.length * 1.50
+  if (this.size === "large") {
+    this.cost += 12
+  } else if (this.size === "medium") {
+    this.cost += 8
+  } else {
+    this.cost += 4
+  }
+  return this.cost
 };
 
 
@@ -35,5 +43,10 @@ $(function() {
   $("button#cyo").click(function() {
     $("#order-form").show();
     $("#home-page").hide();
+  });
+
+  $("form#create-pizza").submit(function() {
+    var size = $("#pizza-size").val();
+    var pizza = new Pizza (size)
   });
 });
