@@ -3,6 +3,14 @@
   text-align: inherit;
 }
 
+#order-form {
+  display: none;
+}
+#home-page {
+  display: all;
+
+}
+
 .page-header {
   border-bottom-color: #FFF0A5;
   font-size: 2em;
@@ -39,6 +47,6 @@ body {
   text-decoration: underline;
 }
 
-.button {
-  color:red;
+#cyo {
+  color: #590202;
 }
