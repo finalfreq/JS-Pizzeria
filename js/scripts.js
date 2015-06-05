@@ -45,7 +45,7 @@ $(function() {
     $("#home-page").hide();
   });
 
-  $("form#create-pizza").submit(function() {
+  $("form#create-pizza").submit(function(event) {
     var size = $("#pizza-size").val();
     var pizza = new Pizza(size)
 
@@ -58,5 +58,10 @@ $(function() {
     $("#order-finished").show();
     $(".size").append(size);
     $(".cost").append(parseFloat(pizza.cost).toFixed(2));
+    event.preventDefault();
+  });
+
+  $("span#reset").click(function() {
+    location.reload();
   });
 });
