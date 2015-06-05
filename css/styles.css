@@ -1,0 +1,27 @@
+#result {
+  display: none;
+  text-align: inherit;
+}
+
+.result, p.lead {
+  font-size: 2em;
+
+}
+body {
+  background-image: url("../media/transmutation2.jpg");
+  align-items: center;
+  opacity: .7;
+  font-size: 1.8em;
+}
+
+.btn {
+  margin: 1.5em;
+  background-color: rgb(12, 21, 240);
+  color: silver;
+}
+.container {
+  background-color: rgb(97, 122, 255);
+  color: rgb(72, 9, 106);
+  font-family: Oldtown, fantasy;
+
+}
