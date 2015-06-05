@@ -47,6 +47,16 @@ $(function() {
 
   $("form#create-pizza").submit(function() {
     var size = $("#pizza-size").val();
-    var pizza = new Pizza (size)
+    var pizza = new Pizza(size)
+
+    $("#toppings :checked").each(function() {
+      pizza.toppings.push($(this).val());
+      $("ul#receipt").append("<li>" + $(this).val() + "</li>")
+    });
+    pizza.calculateCost();
+    $("#order-form").hide();
+    $("#order-finished").show();
+    $(".size").append(size);
+    $(".cost").append(parseFloat(pizza.cost).toFixed(2));
   });
 });

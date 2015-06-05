@@ -3,7 +3,7 @@
   text-align: inherit;
 }
 
-#order-form {
+#order-form, #order-finished {
   display: none;
   border: solid 3px;
 
@@ -44,17 +44,22 @@ body {
   text-align: center;
 }
 
-.about h1, .order h1, #order-form {
+.about h1, .order h1, #order-form, #order-finished h1 {
   color: #590202;
   text-decoration: underline;
 }
 
-#cyo {
+#cyo, #home {
   color: #590202;
+}
+.checkbox {
+  margin-left: 2em;
 }
 
 #pizza-size {
     /* margin: 20px; */
+    width: 200%;
+    font-size: 25px;
     background:  #FFF0A5;
     border-color: inherit;
     color:#7E1F00;
