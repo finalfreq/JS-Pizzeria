@@ -28,12 +28,29 @@
           </p>
         </div>
       </div>
-      <div class="col-sm-6" id="order-form">
-        <h1>Choose your toppings!</h1>
-        <form class="" action="index.html" method="post">
-          <div class="checkbox">
-            <div id="toppings">
-
+      <div class="col-sm-6 col-sm-offset-3" id="order-form">
+        <h1 class="text-center">Create Your Pizza!</h1>
+        <form >
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <label for="pizza-size">Pizza Size:</label>
+              <select id="pizza-size" class="form-control">
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+              </select>
+              <img src="media/cyo.png" alt="a picture of a pizza">
+            </div>
+            <div class="form-group col-sm-6 col-sm-offset-2">
+              <div class="form-group checkbox">
+                <div id="toppings">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+              <button id="bake-it"class="button button-3d button-highlight button-circle button-jumbo text-center">Bake it!</button>
             </div>
           </div>
         </form>
