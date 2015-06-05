@@ -12,11 +12,12 @@ describe("Pizza", function() {
     pizza.addTopping("pepperoni")
     expect(pizza.toppings).to.eql(["pepperoni"])
   });
+  
   it("can have its price calculated", function() {
     var pizza = new Pizza("large", 12)
     pizza.addTopping("pepperoni")
     pizza.addTopping("mushrooms")
     pizza.calculateCost()
-    expect(pizza.price).to.eql(["pepperoni"])
+    expect(pizza.cost).to.equal(15)
   });
 });

@@ -3,26 +3,43 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/buttons.css">
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/buttons.js"></script>
     <script src="js/scripts.js"></script>
-    <title>JS-review2</title>
+    <title>Luigi's Pizza</title>
   </head>
   <body>
-    <div class="container jumbotron text-center">
-      <h1 class= "page-header text-center">Prepare the Transformation</h1>
-      <p class="lead text-center">
-      </p>
-      <form id="calculator" class="form-inline">
-        <div class="form-group text-center">
-          <label for="phrase"></label>
-          <input type="phrase" id="phrase" autofocused required>
-          <label for="word"></label>
-          <input type="word" id="word" autofocused required>
-          <label for="replacementword"></label>
-          <input type="replacementword" id="replacementword" autofocused required>
+    <div class="container">
+      <div id="home-page">
+        <h1 class= "page-header text-center">Welcome to Luigi's Pizzeria</h1>
+        <div class="col-sm-7 order">
+          <h1>Create-Your-Own Pizza!</h1>
+          <p class="lead text-center">Here at Luigi's we believe in building your own pizza. This allows
+            your inner creativity to flow into a delicious circle of gooeyness. To get started click the
+            pizza icon below and you will be on your way to flavor town!   </p>
+            <button id="cyo" class="button button-highlight button-circle button-giant">CYO</button>
         </div>
-          <button class ="btn btn-primary btn-lg"></button>
-      </form>
+        <div class="col-sm-4 about">
+          <h1>About Luigis</h1>
+          <p class="lead text-center">Luigi's prides itself on providing pizza from sustainable ingredients,
+            we only use the best of the best! Started in 1971, Luigi's has quickly become the hot spot
+            in Portland, Oregon's pizza connoisseur's. If you don't believe it try it for yourself!
+          </p>
+        </div>
+      </div>
+
+        <!-- form id="calculator" class="form-inline">
+          <div class="form-group text-center">
+            <label for="phrase"></label>
+            <input type="phrase" id="phrase" autofocused required>
+            <label for="word"></label>
+            <input type="word" id="word" autofocused required>
+            <label for="replacementword"></label>
+            <input type="replacementword" id="replacementword" autofocused required>
+          </div>
+            <button class ="btn btn-primary btn-lg"></button>
+        </form> -->
       <div id="result">
       <p class="lead">    <span class="result"></span> </p>
       </div>

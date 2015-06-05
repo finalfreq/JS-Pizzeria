@@ -3,25 +3,42 @@
   text-align: inherit;
 }
 
-.result, p.lead {
+.page-header {
+  border-bottom-color: #FFF0A5;
   font-size: 2em;
+}
+.result, p.lead {
+  font-size: 1em;
 
 }
+
 body {
-  background-image: url("../media/transmutation2.jpg");
+  background-image: url("../media/pizza.jpg");
   align-items: center;
-  opacity: .7;
-  font-size: 1.8em;
+  /* opacity: .7; */
+  font-size: 23px;
 }
 
-.btn {
-  margin: 1.5em;
-  background-color: rgb(12, 21, 240);
-  color: silver;
-}
 .container {
-  background-color: rgb(97, 122, 255);
-  color: rgb(72, 9, 106);
-  font-family: Oldtown, fantasy;
+  /* background-color: #FFF0A5; */
+  color: #7E1F00;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
 
+.order {
+  margin-right: 20px;
+}
+
+.about, .order {
+  border: solid 3px;
+  text-align: center;
+}
+
+.about h1, .order h1 {
+  color: #590202;
+  text-decoration: underline;
+}
+
+.button {
+  color:red;
 }
