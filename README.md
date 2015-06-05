@@ -1,15 +1,15 @@
-# Philosopher's Stone
+# Luigi's Pizzeria
 
-This project allows a user to input any phrase or sentence, choose a word in the sentence to change, and lastly the word they want it changed too. This will allow you to take any sentence and turn it into gold.
+Welcome to Luigi's Pizzeria, way better then Mario's Pizzeria. Here you will find all that you need to order a pizza with no troubles.
 
 ## Usage
 
 To use the app navigate to
 ```
-philosophers-stone.html
+Luigis-pizzeria.html
 ```
 
-once on the webpage all you need to do is fill out the form for the phrase, the word to change in the phrase, and the word to change it to. Once you click transform you will see your new sentence made of gold.
+Once the page has loaded feel free to read the home page, once you are ready to create a pizza click the CYO button. On the next page you can add the size of the pizza you'd like and the toppings.
 
 ### Bug reports
 
